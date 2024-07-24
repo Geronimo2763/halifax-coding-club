@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Big+Shoulders+Display:wght@100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: hsl(4, 53%, 90%);
+}
+
+.nav.hide {
+    position: static !important;
+    opacity: 0 !important;
+}
+.nav {
+    position: fixed;
+    opacity: 0.99;
+    width: 100%;
+    border-bottom: 2px solid hsl(338, 68%, 83%);
+    height: 3rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(1, 69%, 86%);
+}
+ul {
+    width: 100%;
+    margin: 0 0.3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    word-spacing: 1px;
+}
+
+ul li a:hover {
+    color: hsl(76, 63%, 40%) !important;
+}
+
+h1 {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: hsl(297, 73%, 74%);
+    margin: 1em 0;
+}
+h3 {
+    font-size: 1.2em;
+    margin: 1rem;
+    text-align: center;
+    color: hsl(1, 69%, 40%);
+}
+
+.join {
+    padding: 1.3em;
+    letter-spacing: 0.01rem;
+    text-align: center;
+}
+.sponsor {
+    margin-bottom: 1rem;
+    opacity: 0.7;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.description {
+    background-color: hsl(325, 49%, 86%);
+    padding: 0.1rem;
+}
+
+#image-container {
+    border: 2px solid hsl(297, 73%, 74%);
+    background-color: hsl(325, 49%, 86%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+#image-container img {
+    box-shadow: 0px 0px 5px 5px rgba(3, 3, 3, 0.197);
+    max-width: 25rem;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    width: 47%;
+}
+
+.quote {
+    background-color: hsl(76, 13%, 83%);
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+    padding: 2rem;
+    border: 1px solid hsl(76, 13%, 63%);
+    margin: 20px 0;
+}
+.citation {
+    font-style: normal !important;
+}
+.location {
+    background-image: url("map.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.location h2 {
+    color: white;
+    font-family: "Big Shoulders Display", sans-serif;
+    text-shadow: 2px 2px 2px rgb(3, 3, 3);
+    font-size: 3rem;
+    margin-left: 1.3rem;
+}
+
+.location p {
+    font-family: "Audiowide", sans-serif;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(3, 3, 3);
+    font-size: 1.3rem;
+    margin: 1.3rem;
+}
+
+@media only screen and (min-width: 1500px) {
+    * {
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width: 640px) {
+    * {
+        font-size: 20px;
+    }
+}
+footer{
+    border-top: darkgray solid 1px;
+    display: flex;
+    background-color: hsl(325, 49%, 86%);
+    padding: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+footer p{
+    font-size: 0.9rem;
+}

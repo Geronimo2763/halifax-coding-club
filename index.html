@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Halifx Coding Club!</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#events">Events</a></li>
+
+                    <li><a href="#projects">Projects</a></li>
+
+                    <li><a href="#location">Location</a></li>
+                </ul>
+            </nav>
+            <nav class="nav hide">
+                <ul>
+                    <li><a href="#events">Events</a></li>
+
+                    <li><a href="#community">Our community</a></li>
+
+                    <li><a href="#location">Location</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Halifx Coding Club</h1>
+            <section id="events">
+                <div class="description">
+                    <h3>Meet up. Code. Celebrate</h3>
+                    <p class="join">
+                        Come join our vibrant community whose focus is
+                        programming hard and enjoying the local community -
+                        <em>
+                            <strong>08/02/25</strong>
+                        </em>
+                    </p>
+                    <p class="sponsor">
+                        Halifax Coding Club is a free MeetUp group sponsored by
+                        <a href="https://code.org/" target="_blank">Code.org</a>
+                    </p>
+                </div>
+            </section>
+            <section id="communitiy">
+                <h3>Our Community :D</h3>
+                <div id="image-container">
+                    <img src="group1.jpg" alt="picture of people coding" />
+                    <img src="group2.jpg" alt="picture of people coding" />
+                    <img src="group3.jpg" alt="picture of people coding" />
+                </div>
+                <div class="quote">
+                    The most welcoming, nicest place I have been in.<span
+                        class="citation"
+                        >- Member of HHC</span
+                    >
+                </div>
+            </section>
+            <section class="location">
+                <h2>Where is Halifax Coding club?</h2>
+                <p>Location - 10 New West Street Halfix</p>
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">
+                &copy; halifaxcodingclub-hcc.co.uk -
+                <span id="date"></span>
+                <script>
+                    document.getElementById("date").innerText =
+                        new Date().getFullYear();
+                </script>
+            </p>
+        </footer>
+    </body>
+</html>
